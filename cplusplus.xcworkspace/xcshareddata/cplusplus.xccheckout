@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>89D8F6AA-8537-4326-B367-B700933E67C5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cplusplus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40F24BF0-B91E-44DB-B391-43AD5B1B4475</key>
+		<string>ssh://github.com/eito/cplusplus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cplusplus.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40F24BF0-B91E-44DB-B391-43AD5B1B4475</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/eito/cplusplus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>40F24BF0-B91E-44DB-B391-43AD5B1B4475</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40F24BF0-B91E-44DB-B391-43AD5B1B4475</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cplusplus</string>
+		</dict>
+	</array>
+</dict>
+</plist>
