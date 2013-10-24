@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:dynamic_memory_2/dynamic_memory_2.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:copyswap/copyswap.xcodeproj">
    </FileRef>
    <FileRef
