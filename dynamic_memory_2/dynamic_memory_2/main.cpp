@@ -59,6 +59,18 @@ private:
     ushort* m_digits;
 };
 
+istream& operator>>(istream& is, Number& num)
+{
+    num.read(is);
+    return is;
+}
+
+ostream& operator<<(ostream& os, const Number& num)
+{
+    num.print(os);
+    return os;
+}
+
 int main(int argc, const char * argv[])
 {
 
@@ -67,8 +79,8 @@ int main(int argc, const char * argv[])
         cout << "Not defined yet" << endl;
     }
     cout << "number? ";
-    a.read(cin);
-    a.print(cout);
+    cin >> a;
+    cout << a << endl;
 
     return 0;
 }
