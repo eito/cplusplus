@@ -1,0 +1,114 @@
+int foo(int x) {
+//
+// this is bad if multiple threads can be hitting this
+// Race Condition
+	static int y = 1;
+}
+
+read right to left
+//
+// equivalent
+// pointer to a constant integer
+const int *p;
+int const *p;
+const int p[];
+int const p[];
+
+//
+// constant pointer to integer
+// must be initialized on the same line
+int* const p = &s;
+
+//
+//  this would be valid for previous case
+p[0] = 5;
+
+//
+// const - caller has readonly access
+int hours () const {return m_hours;}
+
+//
+// friend -- can access private parts of interface
+// usage -- operator overloading? +, -, etc
+class Time
+{
+	...
+	friend Time add(Time t, Time s);
+}
+
+Time add(Time a, Time b)
+{
+	Time c;
+	c.m_ticks = a.m_ticks + b.m_ticks;
+	return c;
+}
+
+//
+// DEFAULT ACCESSOR values
+// class default private
+// struct default public
+
+//
+// following are equivalent
+struct Student:Person 
+struct Student: public Person
+
+//
+// should only override 'virtual' methods
+
+///////////////// virtual 08 /////////////////
+//
+// static binding calls method of that type
+//
+// dynamic binding calls the method with that actual object
+//
+
+class Person
+  virtual void print() const {};
+
+//
+// have to use public Person for class otherwise it's private
+class Student : public Person
+  virtual void print() const {};
+	
+//
+// virtual means use dynamic binding so 
+
+Student s;
+process(s);
+
+void process(Person &p) {
+	// if print is virtual
+	// calls Student print if p is really a student
+	//
+	// else it would call Person's print
+	p.print(); 
+}
+
+///////////////// POINTERS /////////////////
+
+// 
+// equivalent
+void process( int p[] );
+void process( int *p );
+
+
+//
+// use nullptr instead of 0 or NULL
+int *p = 0;				// not this
+int *p = NULL;		// not this
+int *p = nullptr;	// THIS
+
+//
+// delete NULL
+you can delete NULL, but not a pointer a second time
+
+Cache *cx = 0;
+int main()
+{
+ 	if (...)
+		cx = new Cache;
+		
+	delete cx; // dont need if check here
+}
+
