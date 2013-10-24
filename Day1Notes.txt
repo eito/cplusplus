@@ -116,3 +116,15 @@ int main()
 // new [] must have matching delete []  or all 
 // destructors not called, only the first one
 
+//
+// any class that uses dynamic memory may need
+- copy constructor
+- assignment operator
+- destructor
+
+// c++11
+- move constructor
+- move assignment
+
+The "Rule of Three" -- if you need one, chances are you will need all
+
