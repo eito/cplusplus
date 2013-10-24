@@ -112,3 +112,7 @@ int main()
 	delete cx; // dont need if check here
 }
 
+// 
+// new [] must have matching delete []  or all 
+// destructors not called, only the first one
+
