@@ -32,7 +32,13 @@ public:
         return *this;
     };
     
+//    std::ostream& operator<<(std::ostream& os, Point const& p)
+//    {
+//        os << "(" << p.x << "," << p.y << ")" << std::endl;
+//    };
+    
 };
+
 
 int main(int argc, const char * argv[])
 {
@@ -44,6 +50,11 @@ int main(int argc, const char * argv[])
     
     t += s;
     std::cout << "x = " << t.x << " and y = " << t.y << std::endl;
+    
+    
+    Point p = Point(5, 7);
+//    std::cout << p << std::endl;
+    
 
     return 0;
 }

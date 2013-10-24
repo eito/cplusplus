@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:operator_overload_lab/operator_overload_lab.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:operator_overload/operator_overload.xcodeproj">
    </FileRef>
    <FileRef
