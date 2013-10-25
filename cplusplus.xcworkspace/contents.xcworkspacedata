@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:virtual_functions_2/virtual_functions_2.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:nonvirtualinterface/nonvirtualinterface.xcodeproj">
    </FileRef>
    <FileRef
