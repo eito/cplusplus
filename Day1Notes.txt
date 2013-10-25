@@ -128,3 +128,6 @@ int main()
 
 The "Rule of Three" -- if you need one, chances are you will need all
 
+//
+// NOTE
+desctructors should never throw an exception
