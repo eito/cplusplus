@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:p_impl/p_impl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:containers/containers.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:virtual_functions_2/virtual_functions_2.xcodeproj">
    </FileRef>
    <FileRef

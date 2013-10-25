@@ -88,3 +88,15 @@ int main()
 	Rational r;
 	process(r);
 }
+
+
+
+//
+// containers
+
+use vector unless you specifically need something else
+- constant time random access
+
+list // not guaranteed to be constant time access
+
+
