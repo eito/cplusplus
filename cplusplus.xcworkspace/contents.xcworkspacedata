@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:nonvirtualinterface/nonvirtualinterface.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:shapes/shapes.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:constructors/constructors.xcodeproj">
    </FileRef>
    <FileRef

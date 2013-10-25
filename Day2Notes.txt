@@ -1,0 +1,90 @@
+// order of construction
+// base classes left to right
+// members top to bottom
+
+// order of destruction
+// members bottom to top
+// base classes right to left
+
+
+// virtual destructor needed when have polymorphic base class
+
+// derived privately inheriting base means all inherited members
+// are now private...
+//
+// no longer is-a, but a is-implemented-with
+
+//
+// casting
+
+int n = 0;
+double d = (double)n;	// C-style
+char *c = (char*)n;		// C-style
+
+// constructor
+double d = double(n);
+
+// polymorphic type -- something with virtual on it
+// you can safely downcast a polymorphic type
+
+// dynamic_cast
+// returns expected type or 0|NULL
+
+// dynamic cast with references can work too
+// bad casts throw bad_cast exception though
+
+// static_cast - no runtime
+// same as c-style cast
+
+std::string s;
+char *d = (char*)s;									// same error
+char *b = static_cast<char*>(s);		// same error
+
+// reinterpret_cast -- usually platform specific conversion
+// intend to view this thing differently
+
+
+//
+// auto type conversion
+
+single-argument constructors, automatic type conversion happs
+
+class Rational
+{
+	Rational(int);
+	//
+	// NOTE: this is ALSO a single-arg constructor
+	Rational(int, int x = 1); 
+}
+
+void process(Rational r)
+{
+	// stuff
+}
+
+int n = 1;
+process(n); // calls Rational(n) and passes to process
+
+
+//
+// conversion operator
+class Rational
+{
+	operator double() const;
+}
+
+Rational::operator double() const 
+{
+	return double(m_num) / m_den;
+}
+
+void process(double d)
+{
+	// do stuff
+}
+
+int main()
+{
+	Rational r;
+	process(r);
+}
